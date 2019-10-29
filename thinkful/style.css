@@ -2,6 +2,8 @@ body{
     margin: 0px;
 }
 
+/* 공통 */
+
 /* nav */
 nav{
     display: flex;
@@ -84,30 +86,47 @@ nav ul li{
     margin: 5px;
 }
 
-.startBtn{
+.btns{
     margin: 23px 0px;
 }
 
-.startBtnFront{
+.btnFront{
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
-    border: .5px solid white;
-    background-color: black;
     width: 150px;
     height: 35px;
     z-index: 2;
 }
 
-.startBtnBack{
-    background-color: white;
+.btnBack{
     width: 150px;
     height: 35px;
     position: relative;
+    z-index: 1;
+}
+
+.btnFront-main{
+    border: .5px solid white;
+    background-color: black;
+}
+
+.btnBack-main{
+    background-color: white;
     left: 3px;
     bottom: 33px;
-    z-index: 1;
+}
+
+.btnFront-info{
+    border: .5px solid black;
+    background-color: white;
+}
+
+.btnBack-info{
+    background-color: black;
+    right: 148px;
+    top: 3px;
 }
 
 .mainImg{
@@ -122,19 +141,37 @@ nav ul li{
 /* section1 */
 .info{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center; 
-    height: 400px; 
+    height: 500px; 
     background-color: whitesmoke;
     color: black;
 }
 
 .info div{
     display: flex;
-    flex-direction: column;
 }
 
-.info div img{
-    width: 220px;
-    height: 170px;
+.info-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 25px 55px;
+}
+
+.info-text p{
+    font-size: 12px;
+    margin: 4px;
+}
+
+.info-text h2{
+    font-weight: 100;
+    margin: 4px;
+}
+
+.info-Img{
+    width: 250px;
+    height: 200px;
+    margin: 25px 55px;
 }
