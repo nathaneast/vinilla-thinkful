@@ -3,39 +3,61 @@ body{
 }
 
 /* nav */
-.nav{
+nav{
+    display: flex;
     width: 100%;
     height: 45px;
     background-color: black;
     border-bottom: .5px solid white;
 }
 
-.nav ul{
+nav ul{
     display: flex;
     list-style: none;
-    justify-content: space-between;
     padding: 0px;
     margin: 0px;
+    width: 100%;
 }
 
-.nav ul li{ 	
+nav ul li{ 	
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     font-size: 9px;
-    color: white;
-    width: 14%;
+    font-weight: bolder;
     height: 45px;
+    letter-spacing: 1px;
+    border-right: .5px solid white;
 }
 
-.headImg{
-    width: 120px;
-    height: 30px;
+.head p{
+    margin: 0px;
+}
+
+.head .head-first{
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.head .head-second{
+    font-size: 1px;
+    text-align: right;
+}
+
+.home{
+    width: 16%;
+    color: white;
 }
 
 .line{
-    border-right: .5px solid white;
-    letter-spacing: 1px;
+    width: 14%;
+    color: white;
+}
+
+.currentPage{
+    color: black;
+    background-color: white;
 }
 
 /* main */
@@ -55,6 +77,11 @@ body{
 
 .main-contents p{
     font-size: 12px;
+}
+
+.main-contents h1{
+    font-size: 40px;
+    margin: 5px;
 }
 
 .startBtn{
@@ -90,4 +117,24 @@ body{
 
 .main-Img{
     margin: 0px 40px;
+}
+
+/* section1 */
+.info{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 400px; 
+    background-color: whitesmoke;
+    color: black;
+}
+
+.info div{
+    display: flex;
+    flex-direction: column;
+}
+
+.info div img{
+    width: 220px;
+    height: 170px;
 }
