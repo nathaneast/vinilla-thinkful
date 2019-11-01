@@ -2,7 +2,27 @@ body{
     margin: 0px;
 }
 
-/* 공통 */
+/* 중복사용 */
+.btns{
+    margin: 23px 0px;
+}
+
+.btnFront{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 150px;
+    height: 35px;
+    z-index: 2;
+}
+
+.btnBack{
+    width: 150px;
+    height: 35px;
+    position: relative;
+    z-index: 1;
+}
 
 /* nav */
 nav{
@@ -11,6 +31,9 @@ nav{
     height: 45px;
     background-color: black;
     border-bottom: .5px solid white;
+    position: fixed;
+    z-index: 3;
+
 }
 
 nav ul{
@@ -86,27 +109,6 @@ nav ul li{
     margin: 5px;
 }
 
-.btns{
-    margin: 23px 0px;
-}
-
-.btnFront{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    width: 150px;
-    height: 35px;
-    z-index: 2;
-}
-
-.btnBack{
-    width: 150px;
-    height: 35px;
-    position: relative;
-    z-index: 1;
-}
-
 .btnFront-main{
     border: .5px solid white;
     background-color: black;
@@ -118,17 +120,6 @@ nav ul li{
     bottom: 33px;
 }
 
-.btnFront-info{
-    border: .5px solid black;
-    background-color: white;
-}
-
-.btnBack-info{
-    background-color: black;
-    right: 148px;
-    top: 3px;
-}
-
 .mainImg{
     width: 180px;
     height: 250px
@@ -138,26 +129,31 @@ nav ul li{
     margin: 0px 40px;
 }
 
-/* section1 */
+/* info */
 .info{
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center; 
-    height: 500px; 
+    height: 520px; 
     background-color: whitesmoke;
     color: black;
 }
 
-.info div{
+.info-contents{
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+    height: 520px;
+    /* margin: 26px 80px; */
+    /* margin: 50px; */
 }
 
 .info-text{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 25px 55px;
+    margin: 30px 0px;
 }
 
 .info-text p{
@@ -173,5 +169,16 @@ nav ul li{
 .info-Img{
     width: 250px;
     height: 200px;
-    margin: 25px 55px;
+    /* margin: 30px 0px; */
+}
+
+.btnFront-info{
+    border: .5px solid black;
+    background-color: white;
+}
+
+.btnBack-info{
+    background-color: black;
+    left: 3px;
+    bottom: 33px;
 }
